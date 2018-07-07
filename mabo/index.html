@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="less.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="bg">
+            <img src="images/vote_bg.png" class="bg_pic">
+            <div class="music">
+                <img src="images/music_03.png" id="music_on">
+                <img src="images/music1_03.png"id="music_off">
+                <audio src="music/鹿先森乐队 - 春风十里.mp3" style="display:none" class="mp3"></audio>
+            </div>
+            <div class="b_content">
+                <img src="images/search.png" alt="">
+                <img src="images/liuyan.png" alt="">
+            </div>
+        </div>
+        <ul class="menu">
+            <li id="li1">微电影成片</li>
+            <li id="li2">微电影剧本</li>
+        </ul>
+        <div class="contents">
+            <ul>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子花开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（39360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子花开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（39360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子花开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（39360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子花开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（39360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子花开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（39360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子花开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（39360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子花开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（39360）</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contents1" >
+            <ul>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子没开》</h3>
+                    <p>武汉职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（9360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子没开》</h3>
+                    <p>武汉职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（9360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子没开》</h3>
+                    <p>武汉职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（9360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子没开》</h3>
+                    <p>武汉职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（9360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子没开》</h3>
+                    <p>武汉职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（9360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子没开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（9360）</a>
+                </li>
+                <li>
+                    <img src="images/zhizihuakai.png" alt="">
+                    <h3>《栀子没开》</h3>
+                    <p>恩施职业技术学院</p>
+                    <p>兰小青</p>
+                    <a href="#">投票（9360）</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    var music_on = document.querySelector('#music_on');
+    var music_off = document.querySelector('#music_off');
+    var music = document.querySelector('.music');
+    var mp3 = document.querySelector('.mp3');
+    var flag = true;
+    music.addEventListener('click',function () {
+        if(flag == true){
+            // console.log(123);
+            mp3.play();
+            flag = false;
+            music_off.style.display='none';
+            music_on.style.display='block';
+        }else if(flag == false){
+            mp3.pause();
+            flag = true;
+            music_off.style.display='block';
+            music_on.style.display='none';
+        }
+    })
+
+    var li1 = document.querySelector('#li1');
+    var li2 = document.querySelector('#li2');
+    var contents = document.querySelector('.contents');
+    var contents1 = document.querySelector('.contents1');
+    li1.addEventListener('click',function () {
+        // console.log(123);
+        contents.style.display = 'block';
+        contents1.style.display = 'none';
+    })
+    li2.addEventListener('click',function () {
+        // console.log(123);
+        contents.style.display = 'none';
+        contents1.style.display = 'block';
+    })
+</script>
+
+</html>
